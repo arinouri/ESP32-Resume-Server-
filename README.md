@@ -33,6 +33,34 @@ esp32-resume-server/
 | Red LED      | D32        |
 | Blue LED     | D33        |
 
+| OLED Pin | ESP32 Pin |
+| -------- | --------- |
+| GND      | GND       |
+| VCC      | 3.3V      |
+| SCL      | GPIO 22   |
+| SDA      | GPIO 21   |
+
+🟦 Blue LED (Power Indicator)
+Anode (long leg) → GPIO 33
+Cathode (short leg) → GND
+Optional: add a 330Ω resistor in series with the anode
+
+🟥 Red LED (Server Status)
+Anode → GPIO 32
+Cathode → GND
+Optional: 330Ω resistor in series.
+
+🔘 Buttons (Pull-up style)
+Each button is connected as:
+-One leg to GND
+-Other leg to:
+
+|Button	   | GPIO Pin  |
+| -------- | --------- |
+|   UP	   |  GPIO 13  |
+|  DOWN	   |  GPIO 14  |
+|  SELECT  |	GPIO 25  |
+
 ## 📸 Usage
 - Place your `resume.jpg` inside the `/data` folder
 - Upload it using **ESP32 Sketch Data Upload** in Arduino IDE 1.8.19
