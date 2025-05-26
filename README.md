@@ -39,6 +39,8 @@ esp32-resume-server/
 | VCC      | 3.3V      |
 | SCL      | GPIO 22   |
 | SDA      | GPIO 21   |
+![image](https://github.com/user-attachments/assets/c70b44b2-cef2-4ba2-890e-f0095d7f39ee)
+
 
 🟦 Blue LED (Power Indicator)
 Anode (long leg) → GPIO 33
